@@ -8,11 +8,6 @@ export default class ListCompany extends Component{
           <td>{Name}</td>
           <td>{Symbol}</td>
           <td>{Exchange}</td>
-          <td>
-            <button className="btn btn-success btn-xs">
-              <span className="glyphicon glyphicon-list-alt"></span>
-            </button>
-          </td>
         </tr>
     )
   }
