@@ -2,10 +2,10 @@ import axios from 'axios';
 import ServerActions from './actions/ServerActions';
 
 const API = {
-  getAllStocks(){
-    axios.get('/api/stocks')
+  getInfos(symbol){
+    axios.get(`/api/stocks/${symbol}`)
       .then(res => res.data)
-      .then(ServerActions.receiveStocks)
+      .then(ServerActions.receiveCompanys)
       .catch(console.error);
   }
 }

@@ -1,10 +1,10 @@
 import AppDispatcher from '../AppDispatcher';
 
 const ServerActions ={
-  receiveStocks(stocks){
+  receiveCompanys(companyArr){
     AppDispatcher.dispatch({
-      type: 'RECEIVE_STOCKS',
-      todos
+      type: 'RECEIVE_All_COMPANIES',
+      companyArr
     })
   }
 }
